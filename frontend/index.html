@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>QuickDesk - Team Task Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🧠 QuickDesk - Team Tracker</h1>
+    <div id="dashboard">
+  <p><strong>User:</strong> <span id="dashUser">Alex</span></p>
+  <p>🧮 Total Tasks: <span id="totalTasks">0</span></p>
+  <p>🕗 Pending: <span id="pendingTasks">0</span></p>
+  <p>✅ Completed: <span id="completedTasks">0</span></p>
+</div>
+
+    <div class="user-select">
+      <label for="user">User:</label>
+      <select id="user">
+        <option value="Alex">Alex</option>
+        <option value="Riya">Riya</option>
+        <option value="Sam">Sam</option>
+      </select>
+    </div>
+
+    <div class="task-form">
+      <input type="text" id="taskInput" placeholder="Task title">
+      <select id="priority">
+        <option>Low priority</option>
+        <option>Medium priority</option>
+        <option>High priority</option>
+      </select>
+      <select id="category">
+        <option>Work</option>
+        <option>Personal</option>
+        <option>Urgent</option>
+      </select>
+      <input type="date" id="dueDate">
+      <button onclick="addTask()">➕ Add Task</button>
+    </div>
+
+    <ul id="taskList"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
